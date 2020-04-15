@@ -1,0 +1,26 @@
+package PrimeiraAula;
+
+import java.util.Scanner;
+
+public class CalcularIMC {
+
+	public static void main(String[] args) {
+		//Formula: IMC = PESO / (ALTURA * ALTURA)
+		double peso;
+		double altura;
+		double resultadoIMC;
+		Scanner scan = new Scanner(System.in);
+		
+		//Solicidando os dados
+		System.out.println("Entre com o seu peso: ");
+		peso = scan.nextDouble();
+		System.out.println("Entre com a sua altura: ");
+		altura = scan.nextDouble();
+		
+		//Realizando o calculo
+		Double alturaAoQuadrado = altura * altura; //Math.pow(altura,2);
+		resultadoIMC = peso/altura;
+		System.out.println(resultadoIMC);
+	}
+
+}
