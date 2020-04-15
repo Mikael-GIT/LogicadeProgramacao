@@ -1,0 +1,19 @@
+package PrimeiraAula;
+
+import java.util.Scanner;
+
+public class CalcularValorTroco {
+
+	public static void main(String[] args) {
+		double valorFinal;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Entre com o valor do Produto:");
+		double valorProduto = scan.nextDouble();
+		System.out.println("Entre com o valor do pagamento: ");
+		double valorPagamento = scan.nextDouble();
+		valorFinal = valorPagamento - valorProduto;
+		System.out.println("O troco a ser recebebido é: " + valorFinal);
+
+	}
+
+}
