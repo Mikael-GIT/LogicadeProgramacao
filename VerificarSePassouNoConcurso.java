@@ -7,11 +7,10 @@ public class VerificarSePassouNoConcurso {
 	public static void main(String[] args) {
 		Double notaPortugues;
 		Double notaMatematica;
-		
-		Double notaMinimaDaMateria = 60.0;
-		
 		Double notaTotalDoCandidato = null;
-		Double notaMinimaParaPassar = 150.0;
+		
+		final Double notaMinimaDaMateria = 60.0;
+		final Double notaMinimaParaPassar = 150.0;
 		
 		notaPortugues = Double.parseDouble(JOptionPane.showInputDialog
 				("Entre com a nota de português: \n Nota precisa ser >= 0 e <= 100"));
